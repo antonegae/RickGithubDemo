@@ -24,7 +24,7 @@ class UserInfoViewModel @Inject constructor(private var repository: githubReposi
     private val _isError = MutableLiveData<Event<String>>()
     val isError: LiveData<Event<String>> get() = _isError
 
-    //pass login(user login "name") to get user's data
+    //pass (user login "name") to get user's data
     fun getUserInfo(name:String) = viewModelScope.launch {
         try {
              val response = repository.callGithubApiServiceInfo(name)
