@@ -78,7 +78,7 @@ class GithubUserAdapter( private val onDataUpdated: () -> Unit) :
     override fun getItemCount(): Int {
 
         val count = currentList.size
-        return if (count > 0) count + 1 else 0
+        return count
 
     }
     //override fun getItemCount(): Int = list.size ?: 0
