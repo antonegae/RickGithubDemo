@@ -10,7 +10,7 @@ import retrofit2.http.Query
 
 interface GithubApiService {
 
-    @Headers("accept: application/json")
+    @Headers("accept: application/json","Authorization: Bearer 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")
     @GET("/users")
     suspend fun getUsersList(
         @Query("since") since: Int,
