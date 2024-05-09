@@ -37,10 +37,10 @@ class GithubUserAdapter( private val onDataUpdated: () -> Unit) :
             binding.tvUserLoginName.text = model.login
             //binding.tvSiteAdmin.text = "Badge status: "+model.siteAdmin.toString()
             if(model.siteAdmin == true){
-                binding.tvSiteAdmin.text ="STAFF"
+                binding.tvSiteAdmin.text = "No."+model.id+" STAFF"
                 binding.tvSiteAdmin.setTextColor(Color.BLUE)
             }else{
-                binding.tvSiteAdmin.text ="non-STAFF"
+                binding.tvSiteAdmin.text = "No."+model.id+" non-STAFF"
                 binding.tvSiteAdmin.setTextColor(Color.RED)
             }
 
