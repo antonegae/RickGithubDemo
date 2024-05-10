@@ -10,6 +10,6 @@
 5. "viewModel" files get data with data flow: "Github API -> Model(repository) -> viewModel -> View
 6. As the above Item 5, View(activities) would obtain data and refresh View therefore.
 7. Note please that the database storing (Room) and Pagination are not implemented for simplicity.
-8. According the specification, site_admin(Badge) should be displayed but I can get all only
+8. According the specification, site_admin(Badge) should be displayed but I can get (not all) only
    Boolean value false if I haven't misunderstood the meaning of site administration.
 
